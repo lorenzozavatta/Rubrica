@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zavatta.Lorenzo.4H.Rubrica", "Zavatta.Lorenzo.4H.Rubrica\Zavatta.Lorenzo.4H.Rubrica.csproj", "{AFE58C72-2ECB-44EF-930B-AB3F092978D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFE58C72-2ECB-44EF-930B-AB3F092978D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE58C72-2ECB-44EF-930B-AB3F092978D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE58C72-2ECB-44EF-930B-AB3F092978D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE58C72-2ECB-44EF-930B-AB3F092978D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B1CD2A2-F6C0-4778-91A4-94697FD8D15F}
+	EndGlobalSection
+EndGlobal

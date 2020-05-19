@@ -1,0 +1,40 @@
+﻿<Window x:Class="Zavatta.Lorenzo._4H.Rubrica.AggiungiRubrica"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zavatta.Lorenzo._4H.Rubrica"
+        mc:Ignorable="d"
+        Title="AggiungiRubrica" Height="400" Width="700"
+        Closing="Window_Closing"
+        Closed="Window_Closed" 
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label Height="39" VerticalAlignment="Bottom" FontSize="20" Content="Aggiungi Contatti" FontWeight="Bold" Margin="0,0,158,0"></Label>
+            <Label Height="30" Margin="0,0,286,0" FontWeight="Bold" FontSize="15">Nome</Label>
+            <TextBox x:Name="nuovoNome" Height="25" Margin="10,0,169,0"/>
+            <Label Height="30" Margin="0,0,261,0" FontWeight="Bold" FontSize="15">Cognome</Label>
+            <TextBox x:Name="nuovoCognome" Height="25" Margin="10,0,169,0"/>
+            <Label Height="30" Margin="0,0,261,0" FontWeight="Bold" FontSize="15">Città</Label>
+            <TextBox x:Name="nuovaCitta" Height="25" Margin="10,0,169,0"/>
+            <Label Height="30" Margin="0,0,261,0" FontWeight="Bold" FontSize="15">CAP</Label>
+            <TextBox x:Name="nuovoCap" Height="25" Margin="10,0,169,0"/>
+            <Label Height="30" Margin="0,0,261,0" FontWeight="Bold" FontSize="15">Telefono</Label>
+            <TextBox x:Name="nuovoTelefono" Height="25" Margin="10,0,169,0"/>
+            <Label Height="30" Margin="0,0,261,0" FontWeight="Bold" FontSize="15">Età</Label>
+            <TextBox x:Name="nuovaNascita" Height="25" Margin="10,0,169,0"/>
+        </StackPanel>
+
+
+        <Button x:Name="salva" Click="Salva_Click" Width="150" Margin="186,328,10,10" Content="Salva" FontSize="18" Grid.Column="1"/>
+        <Button x:Name="Annulla" Click="Annulla_Click" Width="150" Margin="10,328,186,10" Content="Annulla" FontSize="18" Grid.Column="1"/>
+
+    </Grid>
+</Window>

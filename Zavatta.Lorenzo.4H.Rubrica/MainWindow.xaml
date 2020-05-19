@@ -1,0 +1,30 @@
+﻿<Window x:Class="Zavatta.Lorenzo._4H.Rubrica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zavatta.Lorenzo._4H.Rubrica"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Lorenzo Zavatta" Height="400" Width="700" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Background="#FF8522BD" >
+                <Label FontSize="23" VerticalContentAlignment="Center" Height="40" Margin="0,0,50,0" Content="CONTATTI" Background="#FF8522BD" Foreground="White" FontWeight="Bold" Width="437"></Label>
+                <Button x:Name="Add" Click="Add_Click" Margin="164,10,153,10" Width="25" Height="25" Content="+" FontWeight="Bold" Background="White" Foreground="White">
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        
+        <DataGrid AutoGenerateColumns="False" IsReadOnly="True" x:Name="dgDati" Margin="0,45,0,0" CanUserSortColumns="False" CanUserReorderColumns="False" CanUserResizeColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Nome}" Header="Nome" Width="100"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Cognome}" Header="Cognome" Width="100"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding NTelefono}" Header="Numero Telefonico" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Citta}" Header="Città" Width="100"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding CAP}" Header="CAP" Width="100"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Eta}" Header="Età" Width="100"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
